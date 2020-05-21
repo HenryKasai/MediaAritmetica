@@ -11,21 +11,21 @@ namespace MediaAritmetica
             Console.ForegroundColor = ConsoleColor.Blue;
             Console.Write("Primeiro número:");
             string primeiro = Console.ReadLine();
-            decimal primeiro1 = Convert.ToDecimal(primeiro);
+            double primeiro1 = Convert.ToDouble(primeiro);
 
             Console.Write("Segundo número:");
             string segundo = Console.ReadLine();
-            decimal segundo1 = Convert.ToDecimal(segundo);
+            double segundo1 = Convert.ToDouble(segundo);
 
             Console.Write("Terceiro número:");
             string terceiro = Console.ReadLine();
-            decimal terceiro1 = Convert.ToDecimal(terceiro);
+            double terceiro1 = Convert.ToDouble(terceiro);
 
-            decimal result = primeiro1 + segundo1 + terceiro1;
-            decimal resultfinal = result / 3;
+            double result = primeiro1 + segundo1 + terceiro1;
+            double resultfinal = result / 3;
  
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine("A média aritmética entre os números " + primeiro1 + ", " + segundo1 + ", " + terceiro1 + " é: ");
+            Console.Write("A média aritmética entre os números " + primeiro1 + ", " + segundo1 + ", " + terceiro1 + " é: ");
             Console.WriteLine(resultfinal);
             Console.ForegroundColor = ConsoleColor.Gray;
             Console.ReadKey();
